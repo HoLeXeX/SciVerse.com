@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Male Scientists</title>
+    <style>
+        body {
+            /* background-image:c:AdobeStock_631525001_Preview.jpeg ; */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image:url('science.jpeg') ; /* Path to your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Fixed background */
+            color: #fff; /* Text color */
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for header */
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for navigation */
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 12px 24px; /* Changed padding to 12px top/bottom and 24px left/right */
+            border-radius: 5px; /* Added border-radius to make it look like a button */
+            background-color: #007bff; /* Blue color for the button */
+            transition: background-color 0.3s; /* Smooth transition for background color change */
+            font-size: 16px; /* Increased font size for better readability */
+        }
+        nav a:hover {
+            background-color: #0056b3; /* Darker blue color on hover */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for content */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+            padding-bottom: 20px; /* Added padding to separate content from the edge */
+        }
+        .scientist {
+            padding: 20px;
+            margin-bottom: 20px;
+            opacity: 0; /* Initially set opacity to 0 */
+            animation: fadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; /* Apply fade-in animation with cubic-bezier easing */
+            transform: scale(0.8); /* Initial scale */
+        }
+        .scientist h2 {
+            margin-top: 0;
+        }
+
+        /* Keyframes for fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .more-info-button {
+            text-align: center;
+        }
+        .more-info-button button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .more-info-button button:hover {
+            background-color: #0056b3;
+        }
+        .contact-us {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact-us button {
+            padding: 12px 24px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-us button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Famous Male Scientists</h1>
+</header>
+
+<nav>
+    <a href="#isaac-newton">Isaac Newton</a>
+    <a href="#albert-einstein">Albert Einstein</a>
+    <a href="#thomas-edison">Thomas Edison</a>
+    <a href="#nikola-tesla">Nikola Tesla</a>
+    <a href="#charles-darwin">Charles Darwin</a>
+</nav>
+
+<div class="container">
+    <div id="isaac-newton" class="scientist">
+        <h2>Isaac Newton</h2>
+        <p>Sir Isaac Newton was an English mathematician, physicist, and astronomer. He is widely recognized as one of the most influential scientists of all time. Newton formulated the laws of motion and universal gravitation, which laid the groundwork for classical mechanics.</p>
+        <div class="more-info-button">
+            <button onclick="alert('More information about Isaac Newton')">More Info</button>
+        </div>
+    </div>
+
+    <div id="albert-einstein" class="scientist">
+        <h2>Albert Einstein</h2>
+        <p>Albert Einstein was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics (alongside quantum mechanics). His famous equation E=mc^2 showed the equivalence of mass and energy, leading to numerous technological advancements.</p>
+        <div class="more-info-button">
+            <button onclick="alert('More information about Albert Einstein')">More Info</button>
+        </div>
+    </div>
+
+    <div id="thomas-edison" class="scientist">
+        <h2>Thomas Edison</h2>
+        <p>Thomas Edison was an American inventor and businessman who developed many devices that greatly influenced life around the world, including the phonograph, the motion picture camera, and the long-lasting, practical electric light bulb.</p>
+        <div class="more-info-button">
+            <button onclick="alert('More information about Thomas Edison')">More Info</button>
+        </div>
+    </div>
+    
+    <div id="nikola-tesla" class="scientist">
+        <h2>Nikola Tesla</h2>
+        <p>Nikola Tesla was a Serbian-American inventor, electrical engineer, mechanical engineer, and futurist best known for his contributions to the design of the modern alternating current (AC) electricity supply system. Tesla's inventions and discoveries laid the groundwork for many of the technological developments of the 20th century.</p>
+        <div class="more-info-button">
+            <button onclick="alert('More information about Nikola Tesla')">More Info</button>
+        </div>
+    </div>
+    
+    <div id="charles-darwin" class="scientist">
+        <h2>Charles Darwin</h2>
+        <p>Charles Darwin was an English naturalist, geologist, and biologist, best known for his contributions to the science of evolution. His theory of evolution by natural selection became the foundation of modern evolutionary studies, explaining the diversity of life on Earth.</p>
+        <div class="more-info-button">
+            <button onclick="alert('More information about Charles Darwin')">More Info</button>
+        </div>
+    </div>
+</div>
+
+<div class="contact-us">
+    <p>You can contact us at <a href="https://www.google.com/search?q=gmail&rlz=1C1ONGR_enGE1092GE1092&oq=gmail&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGD3SAQgxMjU5ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8">
+        <button style="background-color: rgb(73, 71, 71);color:rgb(181, 11, 11);border-radius: 6px;">Dacheqsamagaria777@gmail.com</button></p>
+    </a>
+</div>
+
+</body>
+</html>
